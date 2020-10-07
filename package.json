@@ -1,26 +1,22 @@
 {
   "name": "quickask",
-  "version": "0.0.1",
-  "description": "Simple JavaScript package to read user input from windows cli. Simplified prompt-sync",
+  "version": "0.0.2",
+  "description": "Just need basic user input without any other packages",
   "main": "index.js",
-  "scripts": {
-    "test": "jest tests",
-    "testWatch": "jest --watchAll tests",
-    "docs": "node_modules/documentation/bin/documentation.js build --format html --output docs --project-name 'Quick Json Config' --project-description 'Simple JavaScript package to read in json files for project configuration' --project-homepage 'https://www.npmjs.com/package/quickjsonconfig'"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MarkKozel/quickjsonconfig.git"
+    "url": "git+https://github.com/MarkKozel/QuickAsk.git"
   },
   "keywords": [
     "javascript",
-    "json",
-    "config"
+    "cli",
+    "user input",
+    "nodejs"
   ],
   "author": "Mark Kozel <development@markkozel.net>",
   "license": "CC-BY-NC-SA-4.0",
   "bugs": {
-    "url": "https://github.com/MarkKozel/quickjsonconfig/issues"
+    "url": "https://github.com/MarkKozel/QuickAsk/issues"
   },
-  "homepage": "https://github.com/MarkKozel/quickjsonconfig#readme"
+  "homepage": "https://github.com/MarkKozel/QuickAsk#readme"
 }
