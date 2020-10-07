@@ -15,9 +15,9 @@ Also referenced [Command Line with ANSI escape codes](https://www.lihaoyi.com/po
 ## Usage:
 
 ```javascript
-quickAsk = require("../src/QuickAsk");
+const quickAsk = require("quickask").QuickAsk;
 
-let reply = quickAsk("type some stuff. Press <enter> when done: ");
+let reply = quickAsk("types some stuff. Press <enter> when done: ");
 console.log("You typed: " + reply);
 ```
 

@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-function quickAsk(prompt) {
+function QuickAsk(prompt) {
   let buf = Buffer.alloc(1);
   let character = '';
   let string = '';
@@ -55,6 +55,4 @@ function quickAsk(prompt) {
   return string;
 }
 
-if (typeof module !== "undefined" && typeof module.exports !== "undefined") {
-  module.exports = quickAsk;
-}
+module.exports = QuickAsk;

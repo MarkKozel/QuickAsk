@@ -1,6 +1,6 @@
 {
   "name": "quickask",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Just need basic user input without any other packages",
   "main": "index.js",
   "repository": {
