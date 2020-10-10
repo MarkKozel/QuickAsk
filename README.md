@@ -2,7 +2,9 @@
 
 Just need basic user input without any other packages
 
-Simple user input until enter is pressed. backscape will remove last character
+Simple user input until enter is pressed. Backspace will remove last character
+
+ALso has a Y/N function that does not require pressing enter
 
 Based on David Mark Clements's [prompt sync ](https://github.com/heapwolf/prompt-sync), but simplified
 
@@ -13,6 +15,7 @@ Also referenced [Command Line with ANSI escape codes](https://www.lihaoyi.com/po
 - Node 12.x, maybe earlier
 
 ## Usage:
+### QuickAsk
 
 ```javascript
 const quickAsk = require("quickask").QuickAsk;
@@ -27,7 +30,20 @@ results:
 type some stuff. Press <enter> when done: klkj;fgjgjjjjg    jjj
 You typed: klkj;fgjgjjjjg    jjj
 ```
+#QuickYN
 
+```javascript
+const quickYN = require("quickask").QuickYN;
+let reply = quickYN('Yes/No Question [Y/N] ');
+console.log("You typed: " + reply)
+```
+
+results:
+
+```
+Yes/No Question [Y/N] N
+You typed: N
+```
 ## License:
 
 [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
@@ -40,10 +56,13 @@ Attribution-NonCommercial-ShareAlike 4.0 International
 None
 
 ### Version History
+1.0.0 Has basic Ask and YN functionality I needed
 
-0.0.2 - Inital build-up
+>Added QuickYN to take a single character input w/o pressing enter key
 
-Added ability to send JavaScript object into constructor, rather than just file. Included automatic write prevention when instantiated this way
+0.0.2 - Initial build-up
+
+>Have QuickAsk working with *process.stdin* and *process.stdout* calls to position prompt, cursor, and types chars
 
 <a href="https://www.buymeacoffee.com/MarkKozel" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
